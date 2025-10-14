@@ -93,6 +93,7 @@
       position: relative;
       z-index: 1;
       margin-top: 0;
+      margin-bottom: 0; /* Remove bottom margin to eliminate scrollable space */
     }
 
     .contact-container {
@@ -103,7 +104,7 @@
       max-width: 1300px; /* Increased from 1100px to 1300px */
       overflow: hidden;
       flex-wrap: wrap;
-      margin: 0 auto 20px auto; /* Changed from 50px to 20px for bottom margin */
+      margin: 0 auto 20px auto; /* Reduced bottom margin */
       position: relative;
       border: 2px solid white;
       animation: float 4s ease-in-out infinite;
@@ -749,20 +750,25 @@
           </div>
         </div>
         
+        <!-- GitHub Profile Description -->
+        <p style="text-align: center; margin: 25px 0 15px 0; color: #333; font-size: 18px; font-weight: 500;">
+          These are the GitHub profiles of the developers
+        </p>
+        
         <!-- GitHub Links Section -->
         <div class="github-container">
           <div class="github-box sam-box" onclick="window.open('https://github.com/Sambersowza', '_blank')">
-            <img src="images/github.png" alt="GitHub">
+            <div style="width: 50px; height: 50px; margin-bottom: 15px;"></div>
             <h3>Sambersowza</h3>
             <p>GitHub Profile</p>
           </div>
           <div class="github-box bas-box" onclick="window.open('https://github.com/Bascode-040612V1', '_blank')">
-            <img src="images/github.png" alt="GitHub">
+            <div style="width: 50px; height: 50px; margin-bottom: 15px;"></div>
             <h3>Bascode-040612V1</h3>
             <p>GitHub Profile</p>
           </div>
           <div class="github-box nashy-box" onclick="window.open('https://github.com/Nashy-dot', '_blank')">
-            <img src="images/github.png" alt="GitHub">
+            <div style="width: 50px; height: 50px; margin-bottom: 15px;"></div>
             <h3>Nashy-dot</h3>
             <p>GitHub Profile</p>
           </div>
